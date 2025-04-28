@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project  
+  xmlns="http://maven.apache.org/POM/4.0.0"  
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0  
+                      https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>3.4.2</version>
-    <relativePath></relativePath>
+    <relativePath/>  <!-- leave empty -->
   </parent>
 
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>3.4.0-SNAPSHOT</version>
+  <name>petclinic</name>
 
   <properties>
+    <!-- Java and dependency versions -->
     <java.version>11</java.version>
-    <webjars-locator.version>0.45</webjars-locator.version>
+    <webjars-locator.version>0.4.0</webjars-locator.version>
     <webjars-bootstrap.version>4.6.0</webjars-bootstrap.version>
     <webjars-font-awesome.version>5.15.4</webjars-font-awesome.version>
     <spring-format.version>0.0.26</spring-format.version>
@@ -23,9 +30,15 @@
     <checkstyle.version>8.45</checkstyle.version>
     <nohttp-checkstyle.version>0.0.8.RELEASE</nohttp-checkstyle.version>
     <jacoco.version>0.8.8</jacoco.version>
+
+    <!-- SonarCloud settings -->
     <sonar.organization>musabaly</sonar.organization>
-  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-</properties>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
+
+  <!-- the rest of your dependencies and build/plugins go here -->
+
+</project>
 
 
   <name>petclinic</name>
