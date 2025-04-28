@@ -13,6 +13,19 @@
   <artifactId>spring-petclinic</artifactId>
   <version>3.4.0-SNAPSHOT</version>
 
+  <properties>
+    <java.version>11</java.version>
+    <webjars-locator.version>0.45</webjars-locator.version>
+    <webjars-bootstrap.version>4.6.0</webjars-bootstrap.version>
+    <webjars-font-awesome.version>5.15.4</webjars-font-awesome.version>
+    <spring-format.version>0.0.26</spring-format.version>
+    <maven-checkstyle.version>3.1.2</maven-checkstyle.version>
+    <checkstyle.version>8.45</checkstyle.version>
+    <nohttp-checkstyle.version>0.0.8.RELEASE</nohttp-checkstyle.version>
+    <jacoco.version>0.8.8</jacoco.version>
+</properties>
+
+
   <name>petclinic</name>
 
  <properties>
